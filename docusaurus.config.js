@@ -16,9 +16,15 @@ module.exports = {
       },
       items: [
         {
+          to: 'docs/getting_started',
+          activeBasePath: 'getting_started',
+          label: 'Docs',
+          position: 'left',
+        },
+        {
           to: 'docs/backtest',
           activeBasePath: 'backtest',
-          label: 'Docs',
+          label: 'Reference',
           position: 'left',
         },
         {
