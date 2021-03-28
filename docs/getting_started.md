@@ -61,7 +61,7 @@ backtest('smac', df, fast_period=15, slow_period=40)
 # Starting Portfolio Value: 100000.00
 # Final Portfolio Value: 102272.90
 ```
-![](./docs/assets/smac_sample.png)
+![](./assets/smac_sample.png)
 
 ## Optimize trading strategies with automated grid search
 
@@ -110,7 +110,7 @@ backtest('rsi', df, rsi_period=14, rsi_upper=70, rsi_lower=30)
 # Starting Portfolio Value: 100000.00
 # Final Portfolio Value: 132967.87
 ```
-![](./docs/assets/rsi.png)
+![](./assets/rsi.png)
 
 ### Simple moving average crossover (SMAC) Strategy
 ```
@@ -119,7 +119,7 @@ backtest('smac', df, fast_period=10, slow_period=30)
 # Starting Portfolio Value: 100000.00
 # Final Portfolio Value: 95902.74
 ```
-![](./docs/assets/smac.png)
+![](./assets/smac.png)
 
 ### Exponential moving average crossover (EMAC) Strategy
 ```
@@ -128,7 +128,7 @@ backtest('emac', df, fast_period=10, slow_period=30)
 # Starting Portfolio Value: 100000.00
 # Final Portfolio Value: 90976.00
 ```
-![](./docs/assets/emac.png)
+![](./assets/emac.png)
 
 ### Moving Average Convergence Divergence (MACD) Strategy
 ```
@@ -137,7 +137,7 @@ backtest('macd', df, fast_period=12, slow_period=26, signal_period=9, sma_period
 # Starting Portfolio Value: 100000.00
 # Final Portfolio Value: 96229.58
 ```
-![](./docs/assets/macd.png)
+![](./assets/macd.png)
 
 ### Bollinger Bands Strategy
 ```
@@ -146,7 +146,7 @@ backtest('bbands', df, period=20, devfactor=2.0)
 # Starting Portfolio Value: 100000.00
 # Final Portfolio Value: 97060.30
 ```
-![](./docs/assets/bbands.png)
+![](./assets/bbands.png)
 
 ### News Sentiment Strategy
 Use Tesla (TSLA) stock from yahoo finance and news articles from [Business Times](https://www.businesstimes.com.sg/)
@@ -170,7 +170,7 @@ data = get_yahoo_data("TSLA", delta_date, current_date)
 sentiments = get_bt_news_sentiment(keyword="tesla", page_nums=3)
 backtest("sentiment", data, sentiments=sentiments, senti=0.2)
 ```
-![](./docs/assets/sentiment.png)
+![](./assets/sentiment.png)
 
 ### Multi Strategy
 
@@ -230,7 +230,7 @@ fig1 = m.plot(pred)
 plt.title('BTC/USDT: Forecasted Daily Closing Price', fontsize=25)
 ```
 
-![](./docs/assets/bitcoin_forecasts.png)
+![](./assets/bitcoin_forecasts.png)
 
 ```
 # Convert predictions to expected 1 day returns
@@ -241,7 +241,7 @@ df["custom"] = expected_1day_return.multiply(-1)
 backtest("custom", df.dropna(),upper_limit=1.5, lower_limit=-1.5)
 ```
 
-![](./docs/assets/bitcoin_prophet_backtest.png)
+![](./assets/bitcoin_prophet_backtest.png)
 
 See more examples [here](https://nbviewer.jupyter.org/github/enzoampil/fastquant/tree/master/examples/).
 
