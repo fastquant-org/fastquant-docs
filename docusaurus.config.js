@@ -1,12 +1,12 @@
 module.exports = {
   title: 'fastquant',
   tagline: 'Bringing backtesting to the mainstream',
-  url: 'https://github.com/enzoampil/fastquant',
-  baseUrl: '/',
+  url: 'https://fastquant-org.github.io',
+  baseUrl: '/fastquant-docs/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'fastquant', // Usually your GitHub org/user name.
-  projectName: 'fastquant', // Usually your repo name.
+  organizationName: 'fastquant-org', // Usually your GitHub org/user name.
+  projectName: 'fastquant-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'fastquant',
